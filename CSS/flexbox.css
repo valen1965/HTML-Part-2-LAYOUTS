@@ -1,0 +1,37 @@
+body {
+    margin: 10px;
+}
+
+.container {
+    border: 3px solid lightgray;
+
+    /*to lay out horizontally*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+/* flex-wrap: wrap;
+    align-content: center; */
+    height: 90vh;
+
+    /*verious ways to distribute content*/
+
+  /*justify-content: space-between;
+    
+    /*pushes 1st and the last item 
+    to the ends of horizontal axes and othe items disctributed 
+    with equal space between them*/
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+    margin: 1rem;
+}
+
+.box-one {
+    /*with this property we disregrad 
+    align items property used for container*/
+    align-self: flex-start;
+}

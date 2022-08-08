@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    background:gold;
+    padding: 1rem;
+}
+
+.box:nth-of-type(2) {
+    background: dodgerblue;
+}
+
+@media screen and (min-width:500px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        flex-direction: row;
+    }
+    .box {
+        background: white;
+    }
+}
+
+@media print {
+ body {
+    font-size: 25pt;
+ }
+
+ .box {
+    padding: 0.5cm;
+ }
+} 
+    

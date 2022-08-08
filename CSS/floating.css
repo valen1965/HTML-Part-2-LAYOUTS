@@ -1,0 +1,36 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin-right: 10px;
+}
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  float: left;
+  margin-right: 0.5rem;
+}
+
+/* thhis class sets floating properties
+to either left or right direction*/
+
+.clear {
+  clear: both;
+}
+
+.tweet {
+  border: 3px solid lightgray;
+  /*another way to solve floating issue*/
+  overflow: hidden;
+}
+
+/*solving floating issue*/
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
